@@ -1,0 +1,4 @@
+ALTER TABLE public.products
+  ADD COLUMN IF NOT EXISTS keunggulan TEXT,
+  ADD COLUMN IF NOT EXISTS bahan TEXT,
+  ADD COLUMN IF NOT EXISTS cocok_untuk TEXT;
