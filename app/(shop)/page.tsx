@@ -31,7 +31,7 @@ export default async function HomePage() {
       <section className="grid items-center gap-8 md:grid-cols-[1.05fr_0.95fr] md:gap-10">
         <div className="hero-rise">
           <h1 className="text-[2.6rem] leading-[1.02] font-extrabold md:text-6xl">
-            Bunga segar untuk hari yang ingin diingat.
+            Bunga hias untuk harian yang ingin diingat.
           </h1>
           <p className="mt-5 max-w-md text-lg text-muted-foreground">
             Pilih buket, tentukan tanggal kirim, dan tulis kartu ucapan sendiri. Butuh warna atau ukuran tertentu? Kami rangkaikan khusus untuk Anda.

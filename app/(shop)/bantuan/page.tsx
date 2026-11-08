@@ -113,7 +113,7 @@ export default async function BantuanPage({ searchParams }: { searchParams: Prom
             <div className="text-sm text-muted-foreground">
               Masuk untuk mengirim pertanyaan atau mencatat keluhan, dan melihat balasan toko di sini.
               <div className="mt-4 flex gap-2">
-                <Link href="/login?redirectTo=/bantuan"><Button>Masuk</Button></Link>
+                <Link href="/login?redirectTo=%2Fbantuan"><Button>Masuk</Button></Link>
                 <Link href="/register"><Button variant="outline">Daftar</Button></Link>
               </div>
             </div>

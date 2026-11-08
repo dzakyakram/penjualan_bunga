@@ -38,15 +38,14 @@ export default function LoginPage() {
         .single()
       const isAdmin = (profile as { role?: string } | null)?.role === 'admin'
 
-      const next = new URLSearchParams(window.location.search).get('redirectTo')
+      const next = new URLSearchParams(window.location.search).get('redirectTo') || new URLSearchParams(window.location.search).get('next')
       const safeNext = next && next.startsWith('/') && !next.startsWith('//') ? next : null
 
       let target = safeNext ?? '/'
       if (isAdmin && !(safeNext && safeNext.startsWith('/admin'))) target = '/admin'
 
       toast.success('Berhasil masuk')
-      router.push(target)
-      router.refresh()
+      window.location.replace(target)
     } catch (error: any) {
       toast.error(error.message)
     } finally {
